@@ -1,0 +1,4 @@
+Flask==1.1.2
+Keras==2.4.3
+nltk==3.5
+numpy==1.19.4

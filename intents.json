@@ -1,0 +1,86 @@
+{"intents": [
+  {"tag": "greeting",
+    "patterns": ["Hi there", "How are you", "Is anyone there?","Hey","Hola", "Hello", "Good day", "Howdy", "Hi",
+      "Hi!", "Yo", "Hello there", "Sup", "Greetings", "What's up"],
+    "responses": ["Hey!", "Good to see you again", "Hi there, how can I help?","Hey, whats up?"],
+    "context": [""]
+   },
+   {"tag": "goodbye",
+    "patterns": ["See you", "Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time",
+    "Cya"],
+    "responses": ["See you!", "Have a nice day", "Bye! Come back again soon."],
+    "context": [""]
+   },
+   {"tag": "help",
+     "patterns": ["Can you help me?", "I need your help", "help", "help me", "can you help me with something?"],
+     "responses": ["Sure, what do you need?", "Of course, what's up?", "Yes, what can I help you with"],
+     "context": [""]
+    },
+   {"tag": "thanks",
+    "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me"],
+    "responses": ["Happy to help!", "Any time!", "My pleasure", "You're Welcome!", "No Problem!"],
+    "context": [""]
+   },
+   {"tag": "thanksButNo",
+    "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me"],
+    "responses": ["For what? I haven't done anything", "For what?", "I did nothing ..."],
+    "context": [""]
+   },
+  {"tag": "commands",
+    "patterns": ["What are the commands?", "commands", "help commands"],
+    "responses": ["Here are all of the commands you can use: Take a picture - open the camera and take a picture, \n Take a picture - Takes a picture, \n Open the camera - Opens the camera page, \n What is in this image? - reads all items in image, \n Save the image - Saves the image, \n I want to stream - opens the streaming page"],
+    "context": [""]
+  },
+   {"tag": "picture",
+     "patterns": ["Please take a picture", "Take a picture", "Capture a picture", "Take a photo"],
+     "responses": ["%0tp"],
+     "context": [""]
+   },
+   {"tag": "openCamera",
+     "patterns": ["Open the camera", "Take me to the camera page", "Open the camera page", "Go to camera",
+     "Go to the camera page", "Where is the camera page?"],
+     "responses": ["%0oc"],
+     "context": [""]
+   },
+   {"tag": "messaging",
+     "patterns": ["Open the messaging page", "Take me to the messaging page", "Go to the messaging page",
+       "Go to messaging", "open messaging", "Where is the messaging page"],
+     "responses": ["%0om"],
+     "context": [""]
+   },
+   {"tag": "readItems",
+     "patterns": ["What's in the image", "Tell me what's in the image", "What is in this image?",
+       "Read everything in this photo", "Can you read me the objects in this photo","Read items in image"],
+     "responses": ["%0ri"],
+     "context": [""]
+   },
+   {"tag": "searchItem",
+     "patterns": ["Is there a in the picture", "I'm looking for", "can you see a", "Was a in that picture",
+     "Was in the image", "Where is the", "Is in the room?", "Is in the image?", "Find in this image",
+     "Can you find ?", "Where are my ?"],
+     "responses": ["%1si"],
+     "context": [""]
+   },
+   {"tag": "saveImage",
+      "patterns": ["Can you save that for me?","Save the picture", "Save the image", "I need you to save that",
+      "Save image", "Save a copy of that image", "Save that for me", "Save that to my camera roll",
+      "Can you make a copy of that", "Save that"],
+      "responses": ["%0sp"],
+      "context": ["takePicture"]
+    },
+    {"tag": "saveImagebutNo",
+      "patterns": ["Can you save that for me?","Save the picture", "Save the image", "I need you to save that",
+      "Save image", "Save a copy of that image", "Save that for me", "Save that to my camera roll",
+      "Can you make a copy of that", "Save that"],
+      "responses": ["You will need me to take a picture first."],
+      "context": [""]
+    },
+  {"tag": "openStream",
+      "patterns": ["i want to stream", "take me to streaming page", "can i stream", "open streaming page",
+      "Go to streaming page", "Please Stream", "Where is the streaming page?", "Go to stream", "Help me stream",
+      "Take me to stream"],
+      "responses": ["%0st"],
+      "context": [""]
+    }
+]
+}
